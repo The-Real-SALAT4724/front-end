@@ -66,14 +66,19 @@ body{
     color:rgb(0, 255, 0);
 }
 
+
 .menu div{
     margin-right: 20px;
     font-size: 18px;
     cursor: pointer;
 }
-.menu div:hover{
+.menu__link:hover{
         color: blue;
         transition: .2s;
+}
+
+.link-active{
+    color: blue;
 }
 
 h2{
@@ -96,4 +101,13 @@ h2{
 
 .welcome_b{
     color: #07a;
+}
+
+.header__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-data{
+    color: #0f0;
 }
