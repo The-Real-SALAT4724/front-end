@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +13,30 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper"> 
         <header class="header">
             <div class="container">
                 <div class="header__body">
-                    <div class="menu">
-                        <div class="home__link">
+                      <div class="header-menu">
+                        <div class="header-menu__link">
                             Home
                         </div>
-                        <div class="skills__link">
+                        <div class="header-menu__link">
                             Skills
                         </div>
-                        <div class="menu__link">
+                        <div class="header-menu__link">
                             Resume
                         </div>
-                        <div class="menu__link">
+                        <div class="header-menu__link">
                             Works
                         </div>
-                        <div class="menu__link">
+                        <div class="header-menu__link">
                             Contacts
                         </div>
                     </div>
-                    <div class="user-data">
+                    <!-- <div class="user-data">
                         <div>
-        Profile
+                        Profile
                         </div>
                         <div class="user-data__name">
                             Name: 
@@ -41,24 +44,26 @@
                         <div class="user-data__number">
                             Number:
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </header>
-        <main class="">
+        <main class="main">
             <section class="first-screen">
                 <div class="container">
+                    <div class="first-screen__body">
 
-                    <h1 class="title" id="title">I´m Mark</h1>
-                    <button class="button">Communication</button>
+                        <div class="first-screen__info">
+                            <p>Hello There</p>
+                            <h1>I´m Mark</h1>
+                            <h2>Welcome</h2>
+                        </div>
+                    
+                        <div class="first-screen__image">
+                            <img src="GREENSTONEBLOCK.png" class="greenstone"><br>
+                        </div>
 
-                    <h2 class="welcome">Welcome</h2>
-
-                    <img src="GREENSTONEBLOCK.png" class="greenstone"><br>
-
-                    <div>
-                        <a class="but" href="#">Im a BUTTON TOO!</a>
-                    </div>
+                    </div>                   
                 </div>
             </section>
 
@@ -89,6 +94,10 @@
         </main>
         <footer class="footer">
             Footer
+            <button class="button">Communication</button>
+            <div>
+                <a class="but" href="#">Im a BUTTON TOO!</a>
+            </div>
         </footer>
     </div>
     <script src="script.js"></script>

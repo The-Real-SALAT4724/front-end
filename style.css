@@ -1,11 +1,17 @@
-h1{
-    color:mediumseagreen;
+/* Made by Mark.Rempel */
+
+*{
+   margin: 0;
+   padding: 0; 
 }
 
-/* Made by Mark.Rempel */
-/* HEADER */
-.header{
-    background-color:black;
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+h1{
+    color:mediumseagreen;
 }
 
 .container{
@@ -58,23 +64,32 @@ body{
     transition: 1s;
 }
 
-/*  ---menu--- */
+/* --- Header --- */
+.header{
+    background-color: #000;
 
-.menu{
-    display: flex;
-    padding: 20px 0;
-    color:rgb(0, 255, 0);
 }
 
+/* feader-menu */
+.header-menu{
+    max-width: 100%;
+    top: 0px;
+    position: fixed;
+    display: flex;
+    padding: 20px 0;
+}
 
-.menu div{
+.header-menu__link{
     margin-right: 20px;
     font-size: 18px;
     cursor: pointer;
+    color: #0f0;
+   
 }
-.menu__link:hover{
-        color: blue;
-        transition: .2s;
+
+.header-menu__link:hover{
+    color: #fff;
+    transition: .3s;
 }
 
 .link-active{
@@ -87,7 +102,7 @@ h2{
 
 
 .greenstone{
-    display: none;
+    display: block;
 }
 
 .welcome{
@@ -111,3 +126,51 @@ h2{
 .user-data{
     color: #0f0;
 }
+
+/* first-screen */
+
+.first-screen{
+    padding: 120px 0;
+    background-color: #000;
+}
+
+.first-screen__body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-screen__info h2{
+    color: #fff;
+    font-size: 27px;
+}
+
+.first-screen__info h1{
+    font-size: 45px;
+    color: #0f0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.first-screen__info p{
+    font-size: 16px;
+    color: rgb(0, 255, 0);
+}
+
+.first-screen__image{
+    width: 250px;
+    height: 320px;
+    border: 6px solid #0f0;
+    position: relative;
+}
+
+.first-screen__image img{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* margin-bottom: 10px; */
