@@ -2,57 +2,67 @@
 <html lang="en">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Site</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- ico -->
+    <link rel="icon" href="images/icons/codewars_icon.svg" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="animation.css"> -->
+    <title>Mark's Site</title>
 </head>
 
 <body>
+    <div class="tinting"></div>
     <div class="wrapper"> 
         <header class="header">
             <div class="container">
                 <div class="header__body">
-                      <div class="header-menu">
-                        <div class="header-menu__link">
-                            Home
-                        </div>
-                        <div class="header-menu__link">
-                            Skills
-                        </div>
-                        <div class="header-menu__link">
-                            Resume
-                        </div>
-                        <div class="header-menu__link">
-                            Works
-                        </div>
-                        <div class="header-menu__link">
-                            Contacts
-                        </div>
-                    </div>
-                    <!-- <div class="user-data">
-                        <div>
-                        Profile
-                        </div>
-                        <div class="user-data__name">
-                            Name: 
-                        </div>
-                        <div class="user-data__number">
-                            Number:
-                        </div>
-                    </div> -->
+                      <ul class="header-menu">
+                        <li class="header-menu__link">
+                            <a href="#first-screen">Home</a>
+                        </li>
+                        <li class="header-menu__link">aa
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li class="header-menu__link">
+                            <a href="#resume">Resume</a>
+                        </li>
+                        <li class="header-menu__link">
+                            <a href="#works">Works</a>
+                        </li>
+                        <li class="header-menu__link">
+                            <a href="#contact" class="contacts__button">Contacts</a>
+                        </li>
+                        <li class="header-menu__link">
+                            <a href="https://svetailo.com" target="_blank" class="contacts__button">Svetailo</a>
+                        </li>
+                    </ul>
+
+                    <!-- <div class="animation-main animation1-1">H</div>
+                    <div class="animation-main animation1-2">o</div>
+                    <div class="animation-main animation1-3">m</div>
+                    <div class="animation-main animation1-4">e</div>
+
+                
+                    <div class="animation2-1">S</div>
+                    <div class="animation2-2">k</div>
+                    <div class="animation2-3">i</div>
+                    <div class="animation2-4">l</div>
+                    <div class="animation2-5">l</div>
+                    <div class="animation2-6">s</div> -->
+
                 </div>
             </div>
         </header>
         <main class="main">
-            <section class="first-screen">
+            <section class="first-screen" id="first-screen">
                 <div class="container">
                     <div class="first-screen__body">
-
                         <div class="first-screen__info">
                             <p>Hello There</p>
                             <h1>I´m Mark</h1>
@@ -60,7 +70,7 @@
                         </div>
                     
                         <div class="first-screen__image">
-                            <img src="GREENSTONEBLOCK.png" class="greenstone"><br>
+                            <img src='images/GREENSTONEBLOCK.png', class="greenstone"><br>
                         </div>
 
                     </div>                   
@@ -69,38 +79,208 @@
 
             <section class="skills" id="skills">
                 <div class="container">
-                    <h2 class="skills__title">Skills</h2>
+                    <h2 class="title">
+                        Skills
+                        <div class="title__decor-line"></div>
+                    </h2>
+                    <div class="skills__blocks">
+
+                        <div class="skills-block">
+                            <div class="skills-block__rhombus">
+                                <img src="images/icons/html_icon.svg" alt="">
+                            </div>
+                            <h3 class="skills-block__titles">HTML</h3>
+                            <p class="skills-block__text">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
+                        </div>
+
+                        <div class="skills-block">
+                            <div class="skills-block__rhombus">
+                                <img src="images/icons/sass_icon.svg" alt="">
+                            </div>
+                            <h3 class="skills-block__titles">SASS</h3>
+                            <p class="skills-block__text">Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
+                        </div>
+
+                       <div class="skills-block">
+                        <div class="skills-block__rhombus">
+                            <img src="images/icons/js_icon2.svg" alt="">
+                        </div>
+                        <h3  class="skills-block__titles">JavaScript</h3>
+                        <p class="skills-block__text">JS is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.</p>
+                       </div>
+
+                        <div class="skills-block">
+                            <div class="skills-block__rhombus">
+                                <img src="images/icons/ts_icon.svg" alt="">
+                            </div>
+                            <h3 class="skills-block__titles">TypeScript</h3>
+                            <p class="skills-block__text">TS, it is a strict syntactical superset of JavaScript and adds optional static typing to the language.</p>
+                        </div>
+
+                        <div class="skills-block">
+                            <div class="skills-block__rhombus">
+                                <img src="images/icons/react_icon.svg" alt="">
+                            </div>
+                            <h3 class="skills-block__titles">React</h3>
+                            <p class="skills-block__text">A JavaScript library for building user interfaces</p>
+                        </div>
+                       
+
+                        <div class="skills-block">
+                            <div class="skills-block__rhombus">
+                                <img src="images/icons/redux_icon.svg" alt="">
+                            </div>
+                            <h3 class="skills-block__titles">Redux</h3>
+                            <p class="skills-block__text">Redux helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.</p>
+                        </div>
+
+                    </div>
+                    
                 </div>
             </section>
 
             <section class="resume" id="resume">
                 <div class="container">
-                    <h2 class="resume__title">Resume</h2>
+                    <h2 class="title">
+                        Resume
+                        <div class="title__decor-line"></div>
+                    </h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum facere id iusto officiis saepe? Corrupti in inventore debitis ipsa placeat!
+                    </p>
                 </div>
             </section>
 
             <section class="works" id="works">
                 <div class="container">
-                    <h2 class="works__title">Works</h2>
+                    <h2 class="title">
+                        Works
+                        <div class="title__decor-line"></div>
+                    </h2>
+
+                    <div class="works__blocks">
+                        <div class="works__block">
+                            <div class="works__image">
+                                <img src="images/works_photos/photo01.png" alt="Photo 1">
+                                <div class="image-background"></div>
+                            </div>
+                            <h4 class="works__title">Minecraft №1</h4>
+                            <p class="works__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, illum?</p>
+                        </div>
+
+                        <div class="works__block">
+                            <div class="works__image">
+                                <img src="images/works_photos/photo02.png" alt="Photo 2">
+                                <div class="image-background"></div>
+                            </div>
+                            <h4 class="works__title">Minecraft №2</h4>
+                            <p class="works__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, illum?</p>
+                        </div>
+                        
+                        <div class="works__block">
+                            <div class="works__image">
+                                <img src="images/works_photos/photo03.png" alt="Photo 3">
+                                <div class="image-background"></div>
+                            </div>
+                            <h4 class="works__title">Minecraft №3</h4>
+                            <p class="works__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, illum?</p>
+                        </div>
+                        
+                        <div class="works__block">
+                            <div class="works__image">
+                                <img src="images/works_photos/photo04.png" alt="Photo 4">
+                                <div class="image-background"></div>
+                            </div>
+                            <h4 class="works__title">Minecraft №4</h4>
+                            <p class="works__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, illum?</p>
+                        </div>
+
+                        <div class="works__block">
+                            <div class="works__image">
+                                <img src="images/works_photos/photo05.png" alt="Photo 5">
+                                <div class="image-background"></div>
+                            </div>
+                            <h4 class="works__title">Minecraft №5</h4>
+                            <p class="works__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, illum?</p>
+                        </div>
+
+                        <div class="works__block">
+                            <div class="works__image">
+                                <img src="images/works_photos/photo06.png" alt="Photo 6">
+                                <div class="image-background"></div>
+                            </div>
+                            <h4 class="works__title">Minecraft №6</h4>
+                            <p class="works__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, illum?</p>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
-            <section class="contact" id="contact">
+            <section class="contact">
                 <div class="container">
-                    <h2 class="contact__title">Contact</h2>
+                    <h2 class="title">
+                        Contacts
+                        <div class="title__decor-line"></div>
+                    </h2>
+                       <p>
+                        Lorem, ipsum dolor sit amet consectetur 
+                        adipisicing elit. Eum facere id iusto officiis saepe? Corrupti in inventore debitis ipsa placeat!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci rerum laudantium dolorum animi 
+                        minima, quis suscipit delectus excepturi. Unde fugiat incidunt 
+                        delectus sunt exercitationem dolorem quo eligendi nesciunt 
+                        consequuntur, deleniti recusandae esse blanditiis similique tempora. Eos assumenda deserunt at unde vitae ex eveniet mollitia molestiae? Est ullam harum iure et laborum quis repellendus doloremque eos, cum numquam deleniti obcaecati molestiae dicta itaque quidem minus deserunt distinctio, omnis veritatis nesciunt eius quasi temporibus eveniet. Dolorum, necessitatibus soluta iste eius aliquid corporis itaque illum nam autem, reiciendis culpa, distinctio quibusdam dolor. Itaque sint amet velit voluptas voluptatem hic dolore eius odio nobis.
+                    </p>
                 </div>
             </section>
 
         </main>
         <footer class="footer">
-            Footer
-            <button class="button">Communication</button>
-            <div>
-                <a class="but" href="#">Im a BUTTON TOO!</a>
+            <div class="container">
+                <h4>Mark.R</h4>
+                <div class="footer__links">
+
+                    <div class="footer__link">
+                        <img src="images/icons/telegram_icon2.svg" alt="Telegram">
+                    </div>
+
+                    <div class="footer__link">
+                        <img src="images/icons/linkedin_icon.svg" alt="Linkedin">
+                    </div>
+
+                    <div class="footer__link">
+                        <img src="images/icons/github_icon.svg" alt="GitHub">
+                    </div>
+
+                    <!--
+                        
+                        <div class="footer__link">
+                        <img src="images/icons/twitter_icon.svg" alt="Twitter">
+                    </div>
+
+                    -->
+
+                    <div class="footer__link">
+                        <img src="images/icons/codewars_icon.svg" alt="Codewars">
+                    </div>
+
+                </div>
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+
+    <img src="" alt="" class="img">
+
+    <!-- <script src="js/script.js"></script> -->
+    <!-- <script src="js/dataTypes.js"></script> -->
+    <script src="js/tasks.js"></script>
+
 </body>
 
 </html>
+
+
+<!-- <button class="button">Communication</button>
+            <div>
+                <a class="but" href="#">Im a BUTTON TOO!</a>
+            </div> -->

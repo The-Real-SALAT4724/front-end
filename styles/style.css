@@ -1,0 +1,414 @@
+/* Made by Mark.Rempel */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+}
+
+
+h1 {
+    color: mediumseagreen;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+
+.tinting{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+    transition: 700ms;
+}
+
+.tinting.active{
+    transition: 700ms;
+    z-index: 20;
+    background-color: #000;
+}
+
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.title {
+    color: lime;
+    font-size: 100px;
+    background-color: black;
+    transition: 1s;
+}
+
+
+.code {
+    color: deepskyblue;
+    padding: 0px 0px 0px 20px;
+    margin: 30px;
+    border: 2px solid hsl(120, 100%, 50%);
+}
+
+.html {
+    color: red;
+}
+
+.but {
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 255);
+    border-radius: 10px;
+    background-color: rgb(18, 18, 163);
+    color: rgb(0, 255, 0);
+    font-weight: 900;
+    transition: 5s;
+    display: none;
+
+}
+
+.but:hover {
+    background-color: rgb(18, 18, 163);
+    opacity: 0.8;
+}
+
+.color {
+    background-color: lime;
+    color: orange;
+    transition: 1s;
+}
+
+/* --- Header --- */
+header {
+    background: rgb(14, 3, 116);
+    background: linear-gradient(180deg, rgba(14, 3, 116, 1) 0%, rgba(14, 3, 116, 1) 70%, rgba(0, 0, 0, 1) 100%);
+    position: fixed;
+    padding: 30px 0;
+    z-index: 10;
+    width: 100%;
+    /* box-shadow: 0px 10px 30px rgb(40, 30, 129); */
+}
+
+footer {
+    background-color: #0e0;
+}
+
+
+/* header-menu */
+
+.header-menu {
+    max-width: 100%;
+    top: 0px;
+
+    display: flex;
+
+}
+
+.header-menu__link a{
+    margin-right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #0f0;
+    letter-spacing: 2px;
+    /* text-shadow: 2px 2px 20px #000; */
+    text-decoration: none;
+
+    text-shadow: -2px 9px 5px rgba(0, 0, 0, 1);
+
+}
+
+.header-menu__link:hover a{
+    color: orange;
+    transition: .3s;
+    text-shadow: -2px 6px 8px orange;
+    ;
+}
+
+.link-active {
+    color: blue;
+}
+
+h2 {
+    color: rgb(0, 255, 0);
+}
+
+
+.greenstone {
+    display: block;
+}
+
+.welcome {
+    font-size: 70px;
+    transition: 0.7s;
+}
+
+.welcome_g {
+    color: #0f0;
+}
+
+.welcome_b {
+    color: #07a;
+}
+
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.user-data {
+    color: #0f0;
+}
+
+/* --- FIRST-SCREEN ---*/
+
+.first-screen {
+    padding: 120px 0;
+    background-color: #000;
+}
+
+.first-screen__body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-screen__info h2 {
+    color: yellow;
+    font-size: 27px;
+    position: relative;
+}
+
+.first-screen__info h1 {
+    font-size: 45px;
+    color: #0f0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.first-screen__info p {
+    font-size: 16px;
+    color: rgb(0, 255, 0);
+}
+
+.first-screen__image {
+    width: 250px;
+    height: 320px;
+    border: 6px solid #0f0;
+    position: relative;
+}
+
+
+@media screen and (max-width: 750px) {
+    .first-screen__image {
+        display: none
+    }
+}
+
+.first-screen__image img {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* --- SKILLS --- */
+
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.title__decor-line {
+    width: 100px;
+    height: 2px;
+    background-color: #0a0;
+    margin: 7px auto;
+}
+
+.skills__blocks {
+    color: #67bcd8;
+    display: grid;
+    grid-template: repeat(2, 250px) / repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .skills__blocks {
+        grid-template: repeat(2, 250px) / repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+}
+
+
+.skills-block {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 35px;
+    /* border: 1px solid #fff; */
+    padding-top: 30px;
+
+
+}
+
+.skills-block__rhombus {
+    width: 110px;
+    height: 110px;
+    background-color: #252527;
+    transform: rotate(45deg);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skills-block__rhombus:hover {
+    box-shadow: 0 0 3px 3px yellow;
+    transition: all .3s ease-in-out;
+}
+
+.skills-block__rhombus img {
+    transform: rotate(-45deg);
+    width: 50px;
+}
+
+.skills-block__titles {
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.skills-block__text {
+    color: #0a0;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+
+/* --- FOOTER --- */
+
+.footer__link img {
+    width: 30px;
+}
+
+.footer__link {
+    border: 3px solid #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    
+}
+
+.footer__link:hover {
+    box-shadow: 0 0 3px 3px black;
+    transition: all .3s ease-in-out;
+}
+
+.footer h4 {
+    text-align: center;
+    font-size: 33px;
+}
+
+footer {
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+
+
+.works__block{
+    width: 450px;
+}
+
+
+.works__blocks{
+    padding-top: 37px;
+}
+
+.works__block h4{
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.works__image{
+    width: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-background {
+    background-color: rgb(37, 255, 37);
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1000ms;
+
+}
+
+.works__image:hover .image-background {
+    transition: 300ms;
+
+    top: -200%;
+
+    /* opacity: 0; */
+    cursor: pointer;
+}
+
+.works__image img{
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- TEST --- */
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+section p {
+    font-size: 25px;
+}
+
+p {
+    color: #afa;
+}
