@@ -340,12 +340,15 @@ footer {
 
 
 .works__block{
-    width: 450px;
+    
 }
 
 
 .works__blocks{
     padding-top: 37px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
 }
 
 .works__block h4{
@@ -357,27 +360,38 @@ footer {
 }
 
 .works__image{
-    width: 450px;
+    width: 100%;
+    height: 290px;
     position: relative;
     overflow: hidden;
 }
 
 .image-background {
-    background-color: rgb(37, 255, 37);
-    opacity: 0.5;
+    background-color: rgba(37, 255, 37, 0.5);
     position: absolute;
-    top: 0;
+    top: -200%;
     left: 0;
     width: 100%;
     height: 100%;
-    transition: 1000ms;
+    transition: 1s;
+}
 
+.image-background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-background p{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
 }
 
 .works__image:hover .image-background {
     transition: 300ms;
-
-    top: -200%;
+    top: 0%;
 
     /* opacity: 0; */
     cursor: pointer;
@@ -385,8 +399,22 @@ footer {
 
 .works__image img{
     max-width: 100%;
+    height: 100%;
 }
 
+.works__link{
+    color: rgb(37, 255, 37);
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    border-bottom: 4px double rgb(37, 255, 37);
+    border-left: 4px double rgb(37, 255, 37);
+    border-top: 4px double rgb(37, 255, 37);
+    border-right: 4px double rgb(37, 255, 37);
+}
 
 
 
