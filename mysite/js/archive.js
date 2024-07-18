@@ -1,6 +1,3 @@
-console.log('Script')
-
-
 
 // const tinting = document.querySelector(".tinting")
 // console.log(tinting)
