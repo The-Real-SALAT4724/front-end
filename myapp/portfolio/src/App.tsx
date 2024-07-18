@@ -73,9 +73,9 @@ function App() {
             <div className="container">
               <div className="first-screen__body">
                 <div className="first-screen__info">
-                  <p>Hello There</p>
+                  <h5>Hello There</h5>
                   <h1>I´m Mark</h1>
-                  <h2>Welcome to my Site</h2>
+                  <h3>Welcome to my Site</h3>
                 </div>
 
                 <div className="first-screen__image">

@@ -159,6 +159,15 @@ h2 {
     color: rgb(0, 255, 0);
 }
 
+h3 {
+    color: yellow;
+}
+
+.first-screen__info h5 {
+    color: rgb(0, 255, 0);
+
+}
+
 
 .greenstone {
     display: block;
@@ -210,8 +219,8 @@ h2 {
 .first-screen__info h1 {
     font-size: 45px;
     color: #0f0;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 .first-screen__info p {
