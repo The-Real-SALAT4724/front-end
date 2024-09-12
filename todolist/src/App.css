@@ -1,0 +1,13 @@
+.App {
+  padding: 30px;
+  display: flex;
+}
+
+.App > div {
+  margin-right: 50px;
+}
+
+body{
+  background-color: rgb(238, 238, 238);
+  color: rgb(11, 206, 11);
+}
