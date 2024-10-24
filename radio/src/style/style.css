@@ -9,7 +9,8 @@ body {
 
 .promo {
     padding-top: 10px;
-    padding-bottom: 52px;
+    padding-bottom: 53px;
+    background: url("../image/main_bg.jpg") center center /cover no-repeat;
 }
 
 .container {
