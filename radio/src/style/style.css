@@ -89,3 +89,23 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+.intensive{
+    background-color: #EFEFEF;
+    padding-top: 80px;
+}
+
+.subtitle{
+    text-align: center;
+    color: #4A4A4A;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.divider {
+    background: #F9BF3B;
+    width: 220px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
